@@ -1,0 +1,935 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.917);
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(105, 105, 105, 0.741);
+    color: darkred;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: inset 0 0 5px 3px;
+    z-index: 1;
+    position: fixed;
+}
+
+.firstMain {
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(rgba(139, 0, 0, 0.471), rgba(0, 0, 0, 0.54)), url(/assets/pictures/gold.jpg);
+    background-size: 100% 100%;
+    z-index: 3;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-items: flex-end; */
+}
+
+.firstInsideBox {
+    width: 30%;
+    height: 30%;
+    background-color: rgba(107, 29, 29, 0.57);
+    position: absolute;
+    top: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 20px;
+}
+
+.logoBox {
+    width: 50%;
+    height: 30%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.firstPic {
+    width: 40px;
+    height: 40px;
+    background-image: url(pictures/telegram.png);
+    background-size: 100% 100%;
+    border-radius: 100%;
+    cursor: auto;
+}
+
+.secondPic {
+    width: 40px;
+    height: 40px;
+    background-image: url(/assets/pictures/instagram.png);
+    background-size: 100% 100%;
+    border-radius: 100%;
+    cursor: auto;
+}
+
+.thirdPic {
+    width: 40px;
+    height: 40px;
+    background-image: url(pictures/whatsapp.png);
+    background-size: 100% 100%;
+    border-radius: 100%;
+    cursor: auto;
+}
+
+.forthPic {
+    width: 40px;
+    height: 40px;
+    background-image: url(pictures/facebook.png);
+    background-size: 100% 100%;
+    border-radius: 100%;
+    cursor: auto;
+}
+
+.firstPic:hover {
+    transform: rotate(360deg);
+    transition: all 2s;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    box-shadow: inset 0 0 5px 3px blue;
+}
+
+.secondPic:hover {
+    transform: rotate(360deg);
+    transition: all 2s;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    box-shadow: inset 0 0 5px 3px red;
+}
+
+.thirdPic:hover {
+    transform: rotate(360deg);
+    transition: all 2s;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    box-shadow: inset 0 0 5px 3px green;
+}
+
+.forthPic:hover {
+    transform: rotate(360deg);
+    transition: all 2s;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    box-shadow: inset 0 0 5px 3px purple;
+}
+
+.lastBox {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 255, 0);
+    border-radius: 100%;
+    z-index: 2;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    background-image: url(pictures/arrow.png);
+    background-size: 100% 100%;
+    border-radius: 100%;
+    cursor: auto;
+
+}
+
+#top {
+    position: absolute;
+    top: 10px;
+}
+
+.firstLeft {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(222, 184, 135, 0.729);
+    position: fixed;
+    left: 10px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left1 {
+    width: 0;
+    height: 50px;
+    background-color: red;
+    position: fixed;
+    left: 10px;
+    top: 170px;
+    margin-top: 20px;
+    transition: all 1s;
+    background-image: url(/assets/pictures/house.png);
+    background-size: 100% 100%;
+    opacity: 0.7;
+
+
+
+}
+
+.left2 {
+    width: 0;
+    height: 50px;
+    background-color: red;
+    position: fixed;
+    left: 10px;
+    top: 250px;
+    transition: all 1s;
+    background-image: url(/assets/pictures/actor.png);
+    background-size: 100% 100%;
+    opacity: 0.7;
+
+}
+
+.left3 {
+    width: 0;
+    height: 50px;
+    background-color: red;
+    position: fixed;
+    left: 10px;
+    top: 310px;
+    transition: all 1s;
+    background-image: url(/assets/pictures/iframe.png);
+    background-size: 100% 100%;
+    opacity: 0.7;
+
+}
+
+.left4 {
+    width: 0;
+    height: 50px;
+    background-color: red;
+    position: fixed;
+    left: 10px;
+    top: 370px;
+    transition: all 1s;
+    background-image: url(/assets/pictures/video.png);
+    background-size: 100% 100%;
+    opacity: 0.7;
+
+}
+
+.left5 {
+    width: 0;
+    height: 50px;
+    background-color: red;
+    position: fixed;
+    left: 10px;
+    top: 430px;
+    transition: all 1s;
+    background-image: url(/assets/pictures/music.png);
+    background-size: 100% 100%;
+    opacity: 0.7;
+
+}
+
+.left6 {
+    width: 0;
+    height: 50px;
+    background-color: red;
+    position: fixed;
+    left: 10px;
+    top: 490px;
+    transition: all 1s;
+    background-image: url(/assets/pictures/game.png);
+    background-size: 100% 100%;
+    opacity: 0.7;
+
+}
+
+hr {
+    border: 3px solid rgba(139, 0, 0, 0.689);
+    width: 30px;
+    transition: 1s all;
+    margin: 4px;
+}
+
+.firstLeft:focus {
+    border: 10px;
+    transition: 1s all;
+}
+
+.firstLeft:focus hr:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+    box-shadow: 0 0 5px 3px purple;
+    /* width: 50px; */
+}
+
+.firstLeft:focus hr:nth-child(2) {
+    opacity: 0;
+}
+
+.firstLeft:focus hr:nth-child(3) {
+    transform: rotate(-45deg) translate(10px, -10px);
+    box-shadow: 0 0 5px 3px purple;
+    /* width: 50px; */
+}
+
+.firstLeft:focus~.left1 {
+    background-color: darksalmon;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 10px;
+    top: 170px;
+    margin-top: 20px;
+    transition: all 1s;
+    background-image: url(/assets/pictures/house.png);
+    background-size: 100% 100%;
+    box-shadow: 0 0 5px 5px purple;
+
+}
+
+.firstLeft:focus~.left2 {
+    background-color: darksalmon;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 10px;
+    top: 250px;
+    transition: all 1s;
+    background-image: url(/assets/pictures/actor.png);
+    background-size: 100% 100%;
+    box-shadow: 0 0 5px 5px purple;
+}
+
+.firstLeft:focus~.left3 {
+    background-color: darksalmon;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 10px;
+    top: 310px;
+    transition: all 1s;
+    background-image: url(/assets/pictures/iframe.png);
+    background-size: 100% 100%;
+    box-shadow: 0 0 5px 5px purple;
+}
+
+.firstLeft:focus~.left4 {
+    background-color: darksalmon;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 10px;
+    top: 370px;
+    transition: all 1s;
+    background-image: url(/assets/pictures/video.png);
+    background-size: 100% 100%;
+    box-shadow: 0 0 5px 5px purple;
+}
+
+.firstLeft:focus~.left5 {
+    background-color: darksalmon;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 10px;
+    top: 430px;
+    transition: all 1s;
+    background-image: url(/assets/pictures/music.png);
+    background-size: 100% 100%;
+    box-shadow: 0 0 5px 5px purple;
+}
+
+.firstLeft:focus~.left6 {
+    background-color: darksalmon;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 10px;
+    top: 490px;
+    transition: all 1s;
+    background-image: url(/assets/pictures/game.png);
+    background-size: 100% 100%;
+    box-shadow: 0 0 5px 5px purple;
+}
+
+.secondMain {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(45deg, rgba(139, 0, 0, 0.348), rgba(0, 0, 0, 0.348), rgba(178, 34, 34, 0.325), rgba(184, 135, 11, 0.331), rgba(178, 34, 34, 0.318), rgba(0, 0, 0, 0.301), rgba(139, 0, 0, 0.33)), url(pictures/gold1.jpg);
+    background-size: 100% 100%;
+
+    position: static;
+
+    color: firebrick;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.actorBox1 {
+    width: 20%;
+    height: 40%;
+    background-image: url(pictures/johnny.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.actorBox2 {
+    width: 20%;
+    height: 40%;
+    background-image: url(pictures/tommy\ shelby.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.actorBox3 {
+    width: 20%;
+    height: 40%;
+    background-image: url(pictures/jim\ carrey.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    ;
+}
+
+.actorBox4 {
+    width: 20%;
+    height: 40%;
+    background-image: url(pictures/mads\ mikkelsen.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.actorBox5 {
+    width: 20%;
+    height: 40%;
+    background-image: url(pictures/jeffrey\ dean\ morgan.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.actorBox6 {
+    width: 20%;
+    height: 40%;
+    background-image: url(pictures/keanu\ reeves.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.actorText {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: center;
+}
+
+.actorPic {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.actorBoxText1 {
+    position: relative;
+    bottom: -30px;
+    font-size: larger;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.actorBoxText2 {
+    position: relative;
+    bottom: -30px;
+    font-size: larger;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.actorBoxText3 {
+    position: relative;
+    bottom: -30px;
+    font-size: larger;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.actorBoxText4 {
+    position: relative;
+    bottom: -30px;
+    font-size: larger;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.actorBoxText5 {
+    position: relative;
+    bottom: -30px;
+    font-size: larger;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.actorBoxText6 {
+    position: relative;
+    bottom: -30px;
+    font-size: larger;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.actorBoxText1:hover,
+.actorBoxText2:hover,
+.actorBoxText3:hover,
+.actorBoxText4:hover,
+.actorBoxText5:hover,
+.actorBoxText6:hover {
+    color: red;
+    font-size: x-large;
+    transition: all 1s;
+}
+
+.actorBox1:hover,
+.actorBox2:hover,
+.actorBox3:hover,
+.actorBox4:hover,
+.actorBox5:hover,
+.actorBox6:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+    border-radius: 20px;
+}
+
+.thirdMain {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(45deg, rgba(139, 0, 0, 0.348), rgba(0, 0, 0, 0.348), rgba(178, 34, 34, 0.325), rgba(184, 135, 11, 0.331), rgba(178, 34, 34, 0.318), rgba(0, 0, 0, 0.301), rgba(139, 0, 0, 0.33)), url(pictures/gold2.jpg);
+    background-size: 100% 100%;
+    color: firebrick;
+    display: flex;
+    flex-direction: column;
+}
+
+.iframeText {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: center;
+}
+
+.iframePic {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+.iframeBox1,
+.iframeBox2,
+.iframeBox3,
+.iframeBox4 {
+    width: 40%;
+    height: 45%;
+}
+
+.forthMain {
+    width: 100vw;
+    height: 100vh;
+    color: firebrick;
+    display: flex;
+    flex-direction: column;
+}
+
+.bandText {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: center;
+}
+
+.bandPic {
+    width: 100%;
+    height: 95%;
+    background-image: url(pictures/sunset.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+.bandBox1 {
+    width: calc(95% / 3);
+    height: 90%;
+    background-image: url(pictures/linkinpark.jpg);
+    background-size: 100% 100%;
+    cursor: auto;
+}
+
+.bandBox2 {
+    width: calc(95% / 3);
+    height: 90%;
+    background-image: url(pictures/imaginedragons.jpg);
+    background-size: 100% 100%;
+    cursor: auto;
+}
+
+.bandBox3 {
+    width: calc(95% / 3);
+    height: 90%;
+    background-image: url(pictures/coldplay.jpg);
+    background-size: 100% 100%;
+    cursor: auto;
+}
+
+.bandBox1:hover,
+.bandBox2:hover,
+.bandBox3:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+    border-radius: 20px;
+}
+
+.linkinVideo {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(pictures/city\ gif.gif);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.coldVideo {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(pictures/cold\ gif.gif);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagineVideo {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(pictures/imagin\ gif.gif);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fifthMain {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(pictures/mountain.jpg);
+    background-size: 100% 100%;
+    color: tomato;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imagineBox,
+.coldBox,
+.linkinBox {
+    width: calc(95% / 3);
+    height: 90%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.musicText {
+    position: relative;
+    /* top: 20px; */
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.audioBox {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+    color: cyan;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sixthMain {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gameBox {
+    width: 30%;
+    height: 30%;
+}
+.topMusic{
+    width: 35%;
+    height: 20px;
+    opacity: 0.5;
+}
+
+@media (max-width: 960px) {
+    .fifthMain {
+        width: 100vw;
+        height: 100%;
+        background-image: url(pictures/mountain.jpg);
+        background-size: 100% 100%;
+        color: tomato;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .secondMain {
+        width: 100vw;
+        height: 200vh;
+        background-image: linear-gradient(45deg, rgba(139, 0, 0, 0.348), rgba(0, 0, 0, 0.348), rgba(178, 34, 34, 0.325), rgba(184, 135, 11, 0.331), rgba(178, 34, 34, 0.318), rgba(0, 0, 0, 0.301), rgba(139, 0, 0, 0.33)), url(pictures/gold1.jpg);
+        background-size: 100% 100%;
+        position: static;
+        color: firebrick;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .actorPic {
+        width: 100%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .actorBox1 {
+        width: 20%;
+        height: 40%;
+        background-image: url(pictures/johnny.jpg);
+        background-size: 100% 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    .actorBox2 {
+        width: 20%;
+        height: 40%;
+        background-image: url(pictures/tommy\ shelby.jpg);
+        background-size: 100% 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    .actorBox3 {
+        width: 20%;
+        height: 40%;
+        background-image: url(pictures/jim\ carrey.jpg);
+        background-size: 100% 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    .actorBox4 {
+        width: 20%;
+        height: 40%;
+        background-image: url(pictures/mads\ mikkelsen.jpg);
+        background-size: 100% 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    .actorBox5 {
+        width: 20%;
+        height: 40%;
+        background-image: url(pictures/jeffrey\ dean\ morgan.jpg);
+        background-size: 100% 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    .actorBox6 {
+        width: 20%;
+        height: 40%;
+        background-image: url(pictures/keanu\ reeves.jpg);
+        background-size: 100% 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    .actorBoxText1,
+    .actorBoxText2,
+    .actorBoxText3,
+    .actorBoxText4,
+    .actorBoxText5,
+    .actorBoxText6 {
+        position: relative;
+        bottom: 0px;
+        right: 200px;
+        font-size: larger;
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .thirdMain {
+        width: 100vw;
+        height: 200vh;
+        background-image: linear-gradient(45deg, rgba(139, 0, 0, 0.348), rgba(0, 0, 0, 0.348), rgba(178, 34, 34, 0.325), rgba(184, 135, 11, 0.331), rgba(178, 34, 34, 0.318), rgba(0, 0, 0, 0.301), rgba(139, 0, 0, 0.33)), url(pictures/gold2.jpg);
+        background-size: 100% 100%;
+        color: firebrick;
+        display: flex;
+        flex-direction: column;
+    }
+
+    iframe {
+        height: 90%;
+    }
+
+    .iframePic {
+        width: 100%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+
+    }
+
+    .forthMain {
+        width: 100vw;
+        height: 200vh;
+        color: firebrick;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bandPic {
+        width: 100%;
+        height: 95%;
+        background-image: url(pictures/sunset.jpg);
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .bandBox1 {
+        width: calc(95% / 3);
+        height: 30%;
+        background-image: url(pictures/linkinpark.jpg);
+        background-size: 100% 100%;
+        cursor: auto;
+    }
+
+    .bandBox2 {
+        width: calc(95% / 3);
+        height: 30%;
+        background-image: url(pictures/imaginedragons.jpg);
+        background-size: 100% 100%;
+        cursor: auto;
+    }
+
+    .bandBox3 {
+        width: calc(95% / 3);
+        height: 30%;
+        background-image: url(pictures/coldplay.jpg);
+        background-size: 100% 100%;
+        cursor: auto;
+    }
+
+    .sixthMain {
+        width: 100vw;
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .gameBox {
+        width: auto;
+        height: auto;
+    }
+}
